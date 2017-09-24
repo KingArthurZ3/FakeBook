@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    overflow-y: scroll;
+}
+
+#nav{
+    width: 100%;
+    display: block;
+    background-color: rebeccapurple;
+    color: white;
+    height: 50px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+#name{
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: auto;
+    display: inline-block;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+#postTitleBox{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+
+#postBox{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: block;
+    height: 100px;
+    border-radius: 10px;
+    outline: none;
+}
+
+#logBtn{
+    float: right;
+    width: 80px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #c3c3e5;
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin-right: 15px;
+    margin-top: 7px;
+    font-size: 20px;
+    z-index: 5;
+
+}
+
+#logBtn:hover{
+    background-color: mediumpurple;
+}
+
+#logoutBtn{
+    float: right;
+    width: 80px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #c3c3e5;
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin-right: 15px;
+    margin-top: 7px;
+    font-size: 20px;
+    z-index: 5;
+}
+
+#btnContainer{
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    height: 50px;
+    align-content: center;
+}
+
+#postBtn{
+    background-color: rebeccapurple;
+    color: white;
+    height: 35px;
+    width: 80px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+#postBtn:hover{
+    background-color: mediumpurple;
+}
+
+#postArea{
+    width: 100%;
+    height: auto;
+}
+
+#display-name{
+    text-align: center;
+    color: rebeccapurple;
+    font-size: 60px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/* classes to be added to posts */
+
+.postText{
+    display: block;
+    height: auto;
+    min-height: 150px;
+    font-size: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: rebeccapurple;
+    padding-left: 10px;
+}
+
+.postTitle{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    width: 40%;
+    height: auto;
+    min-height: 250px;
+    border-radius: 15px;
+    font-size: 60px;
+    display: block;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: rebeccapurple;
+    background-color: #c3c3e5;
+}
+
+.postAuthor{
+    display: block;
+    height: 20px;
+    font-size: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: rebeccapurple;
+    padding-left: 10px;
+    padding-bottom: 7px;
+}
+
+/* refresh button styling */
+
+#refBtn {
+    top: 90%;
+    left: 92%;
+    transform: translate(50%, 50%);
+    position: absolute;
+    background-image: url('refresh.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45px;
+    width: 45px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+
+}

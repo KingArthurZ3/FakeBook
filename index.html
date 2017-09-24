@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FakeBook</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="indexScript.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCyEC16Lwa8VPD-h5H_V9yODTo9R2pA2ko",
+            authDomain: "tobehonest-4f09b.firebaseapp.com",
+            databaseURL: "https://tobehonest-4f09b.firebaseio.com",
+            projectId: "tobehonest-4f09b",
+            storageBucket: "",
+            messagingSenderId: "299919354530"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+<body>
+    <div id="nav">
+        <div id="name">tbh.</div>
+        <button id="logBtn">
+            Login
+        </button>
+        <button id="logoutBtn">Log out</button>
+    </div>
+    <div id="display-name"></div>
+    <textarea id="postTitleBox" placeholder="Add your Title"></textarea>
+    <textarea id="postBox" placeholder="Type your post"></textarea>
+    <div id="btnContainer"><button id="postBtn">Post</button></div>
+    <div id="postArea"></div>
+        <button id="refBtn"></button>
+</body>
+</html>
