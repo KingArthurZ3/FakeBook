@@ -56,7 +56,7 @@ $(document).ready(function(){
             body: body
         }
         //Push data to /posts/uid/
-        db.ref('/posts/' + uid + '/').push(data);
+        db.ref('/posts/').push(data);
     }
 
     function showPost(username, body, title) {
@@ -81,7 +81,7 @@ $(document).ready(function(){
     });
 
     function getPost(userId){
-        db.ref('posts/' + userId + '/').once('value', function(snapshot) {
+        db.ref('posts/').once('value', function(snapshot) {
             snapshot.forEach(function(childSnapshot) {
 
                 var childAuthor = childSnapshot.val().author;
