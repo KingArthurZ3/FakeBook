@@ -6,6 +6,7 @@ $(document).ready(function(){
     var logBtn = document.querySelector('#logBtn');
     var logoutBtn = document.querySelector('#logoutBtn');
     var refBtn = document.querySelector('#refBtn');
+    var postListURL = {};
 
     $('#logoutBtn').hide();
 
@@ -77,7 +78,22 @@ $(document).ready(function(){
     // refresh button should update page with all previous posts
 
     refBtn.addEventListener('click', function(){
+
         getPost(userObj.uid);
+        // var postListURLSize = 0;
+        // db.ref('posts/').once('value', function(snapshot) {
+        //     snapshot.forEach(function(){
+        //         postListURLSize++;
+        //     });
+        // });
+        // if(postListURLSize > postListURL.length){
+        //     getPost(userObj.uid);
+        // }
+        // else {
+        //     alert(postListURLSize);
+        //     alert('posts are up to date');
+        // }
+
     });
 
     function getPost(userId){
