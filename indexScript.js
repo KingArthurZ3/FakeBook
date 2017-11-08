@@ -97,7 +97,7 @@ $(document).ready(function(){
     });
 
     function getPost(userId){
-        db.ref('posts/').once('value', function(snapshot) {
+        db.ref('posts/' + userId).once('value', function(snapshot) {
             snapshot.forEach(function(childSnapshot) {
 
                 var childAuthor = childSnapshot.val().author;
